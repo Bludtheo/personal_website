@@ -1,1 +1,107 @@
-hallo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Books</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6fb;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4f8cff;
+            color: white;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .book-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            width: 260px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .book-card:hover {
+            transform: translateY(-6px) scale(1.03);
+        }
+        .book-cover {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.10);
+        }
+        .book-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        .book-author {
+            color: #4f8cff;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        .book-desc {
+            font-size: 0.98rem;
+            color: #444;
+            text-align: center;
+        }
+        @media (max-width: 700px) {
+            .books-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Books I Love to Read</h1>
+        <p>Welcome to my personal website! Here are some of my favorite books.</p>
+    </header>
+    <main>
+        <div class="books-container">
+            <div class="book-card">
+                <img class="book-cover" src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="To Kill a Mockingbird">
+                <div class="book-title">To Kill a Mockingbird</div>
+                <div class="book-author">Harper Lee</div>
+                <div class="book-desc">A timeless classic about justice, empathy, and the human spirit in the American South.</div>
+            </div>
+            <div class="book-card">
+                <img class="book-cover" src="https://covers.openlibrary.org/b/id/10523338-L.jpg" alt="1984">
+                <div class="book-title">1984</div>
+                <div class="book-author">George Orwell</div>
+                <div class="book-desc">A dystopian novel that explores the dangers of totalitarianism and extreme political ideology.</div>
+            </div>
+            <div class="book-card">
+                <img class="book-cover" src="https://covers.openlibrary.org/b/id/11153227-L.jpg" alt="The Hobbit">
+                <div class="book-title">The Hobbit</div>
+                <div class="book-author">J.R.R. Tolkien</div>
+                <div class="book-desc">A fantasy adventure that follows Bilbo Baggins on a quest filled with magic, dragons, and courage.</div>
+            </div>
+            <!-- Add more books as you like! -->
+        </div>
+    </main>
+</body>
+</html>
